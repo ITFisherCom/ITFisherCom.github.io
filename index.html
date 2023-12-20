@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="IT渔夫是一个优秀的技术博客,包括了iOS开发、小程序开发、前端技术开发总结和IT资讯、IT观点分享、常用小工具等内容">
+    <meta name="author" content="ITFisher">
+    <meta name="keywords" content="IT渔夫,ITFisher,ityufu,hudongdong,blog,ios,cocoapod,swift,swiftui,zxkit,uikit,android,ios开发,开发博客,技术博客,开发大佬,大佬博客,胡东东,小程序开发,微信小程序,支付宝小程序,Cocos2dx,web前端,前端开发,swift开发、swiftUI开发、web开发、微信小程序开发、支付宝小程序开发">
+    <title>IT渔夫-ITFisher-胡东东博客</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+        html {
+            background: url(./static/button-bg.png) fixed #f3f3f3;
+            font-size: 100px;
+        }
+        @media screen and (max-width: 768px) {
+            html {
+                font-size: 80px;
+            }
+        }
+
+        body {
+            font-family:-apple-system-font,BlinkMacSystemFont, Helvetica Neue, PingFang SC, Hiragino Sans GB , Microsoft YaHei UI , Microsoft YaHei ,Arial,sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            color: #1a1a1a;
+            margin: 0rem;
+            background-color: transparent;
+            font-size: 0.16rem;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        footer {
+            margin-top: 0.4rem;
+            padding-bottom: 0.8rem;
+            background-color: #eeeeee;
+        }
+
+        header {
+            text-align: center;
+            padding-top: 0.5rem;
+        }
+
+        h1, h2 {
+            color: #1a1a1a;
+        }
+
+        h2{
+            text-align:center;
+            line-height:1.75;
+            font-size:0.15rem;
+            font-weight:bold;
+            display:table;
+            margin:4em auto 2em;
+            padding:0 0.2em;
+            background:rgba(0, 152, 116, 1);
+            color:#fff;
+            border-radius:0.04rem;
+            padding-left:0.16rem;
+            padding-right:0.06rem;
+            border-bottom:0.04rem solid #f3f3f3;
+            border-right:0.1rem solid transparent;
+
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .header-links{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0.1rem;
+        }
+
+        .header-links-icon {
+            width: 0.24rem; 
+            height: 0.24rem; 
+            padding: 0.08rem; 
+            margin: 0.12rem;
+            background-color: #1a1a1a;
+        }
+
+        section {
+            margin-top: 0.1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        p {
+            margin: auto;
+            color: #333333;
+            line-height: 1.8;
+            width: 80%;
+            max-width: 8rem;
+            word-break: keep-all;
+            text-align: center;
+            font-size: 0.16rem;
+            font-weight: 400;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 40%;
+            margin-top: 0.2rem;
+        }
+        
+        th, td {
+            border: 0.01rem solid #cccccc;
+            text-align: left;
+            padding: 0.1rem;
+            padding-top: 0.18rem;
+            padding-bottom: 0.18rem;
+            white-space: nowrap;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding: 0.05rem 0.3rem;
+        }
+
+        li {
+            margin-bottom: 0.08rem;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(0.2rem);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        img, h1 {
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        #qr-image {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./static/avatar.png" alt="DamonHu" style="width: 130px; height: 130px;">
+        <h1>DamonHu</h1>
+        <p>Software Developer</p>
+        <div class="header-links">
+            <a href="https://github.com/DamonHu" target="_blank">
+                <img src="./static/github.png" alt="github" class="header-links-icon">
+            </a>
+            <a href="https://twitter.com/damonhu_x" target="_blank">
+                <img src="./static/twitter.png" alt="zhihu" class="header-links-icon">
+            </a>
+            <img src="./static/wechat.png" alt="jianshu" onclick="showImage()" class="header-links-icon" style="cursor: pointer;">
+            <a href="https://weibo.com/u/1916674981" target="_blank">
+                <img src="./static/weibo.png" alt="weibo" class="header-links-icon">
+            </a>
+            <a href="mailto:dong765@qq.com" target="_blank">
+                <img src="./static/email.png" alt="email" class="header-links-icon">
+            </a>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <img style="border-radius: 0; display: none; width: 1.8rem; height: 1.8rem;" id="qr-image" src="./static/gongzhonghao.jpg">
+        </div>
+        
+    </header>
+
+    <section id="about">
+        <h2>关于我</h2>
+        <p>你好，我是胡东东（DamonHu）。一个资深的iOS开发者，已经把从游戏到iOS，再到小程序的坑都踩过了一遍。目前在负责一款日活40W+的小程序项目，如有商务合作或者换量业务欢迎联系我。</p>
+        <p style="font-size: 0.18rem; font-weight: bold;">目前对AI很感兴趣，正在积极体验和学习AI工具</p>
+    </section>
+
+    <section id="work">
+        <h2>业余项目</h2>
+        <p>这些是我在业余时间做的一些小玩意，方便日常使用。</p>
+        <table>
+            <tr>
+                <td>
+                    技术博客
+                </td>
+                <td style="width: 100%;">
+                    <a href="https://itFisher.com" target="_blank">itFisher.com</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    MarkDown编辑器 
+                </td>
+                <td style="width: 100%;">
+                    <a href="https://itYuFu.com/md" target="_blank">公众号编辑器</a>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="skills">
+        <h2>技能</h2>
+        <ul>
+            <li>Swift</li>
+            <li>Objective-C</li>
+            <li>Cocos2d-x</li>
+            <li>HTML5&CSS3</li>
+            <li>JavaScript</li>
+            <li>Vue.js</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>工作经验</h2>
+        <ul>
+            <li>上海勤联物联网有限公司 - 技术开发总监 - 2020-06 - 至今</li>
+            <li>上海勤联物联网有限公司 - 前端开发经理 - 2017.07 - 2020-06</li>
+            <li>上海际动网络科技有限公司 - 游戏开发工程师 - 2015.01 - 2017.06</li>
+        </ul>
+    </section>
+
+    <section id="study">
+        <h2>教育背景</h2>
+        <p>工学学士 - 信息工程 - 河南科技大学</p>
+    </section>
+
+    <script>
+        function showImage() {
+            var image = document.getElementById("qr-image");
+            if (image.style.display === "none") {
+                image.style.display = "block";
+            } else {
+                image.style.display = "none";
+            }
+        }
+    </script>
+</body>
+<footer>
+    <hr style="height:1px;border:none;border-top:1px dashed rgba(0, 152, 116, 1);" />
+    <p style="margin-top: 0.5rem;">Copyright © 2019 DamonHu. All rights reserved.</p>
+    <p>备案号：粤ICP备19004689号-1</p>
+</footer>
+</html>
