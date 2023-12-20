@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://itfisher.com/blog/categories/</loc>
+    <loc>https://itfisher.com/blog/link/index.html</loc>
     
     <lastmod>2023-12-20</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://itfisher.com/blog/tags/</loc>
+    <loc>https://itfisher.com/blog/What-Gemini-demo-video-is-a-edited-version.html</loc>
     
     <lastmod>2023-12-20</lastmod>
     
@@ -20,27 +20,27 @@
   </url>
   
   <url>
-    <loc>https://itfisher.com/blog/post/What-Gemini-demo-video-is-a-edited-version</loc>
+    <loc>https://itfisher.com/blog/AI-a-wave-that-must-be-joined.html</loc>
     
-    <lastmod>2023-12-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://itfisher.com/blog/about/</loc>
-    
-    <lastmod>2023-12-12</lastmod>
+    <lastmod>2023-12-20</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://itfisher.com/blog/post/AI-a-wave-that-must-be-joined</loc>
+    <loc>https://itfisher.com/blog/categories/index.html</loc>
     
-    <lastmod>2023-12-11</lastmod>
+    <lastmod>2023-12-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://itfisher.com/blog/tags/index.html</loc>
+    
+    <lastmod>2023-12-20</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
