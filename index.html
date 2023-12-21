@@ -10,6 +10,7 @@
     <title>IT渔夫 - ITFisher - 胡东东博客 - Damon胡东东</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="./js/jquery-3.6.0.min.js"></script>
     <style>
         html {
             background: url(./static/button-bg.png) fixed #f3f3f3;
@@ -34,8 +35,8 @@
 
         footer {
             margin-top: 0.4rem;
-            padding-bottom: 0.8rem;
-            background-color: #eeeeee;
+            /* padding-bottom: 0.8rem; */
+            background-color: rgba(255, 255, 255, 0.6);;
         }
 
         header {
@@ -107,16 +108,15 @@
 
         table {
             border-collapse: collapse;
-            width: 40%;
+            width: max-content;
             margin-top: 0.2rem;
+            border-left: 5px solid rgba(0, 152, 116, 1);
         }
         
         th, td {
             border: 0.01rem solid #cccccc;
             text-align: left;
-            padding: 0.1rem;
-            padding-top: 0.18rem;
-            padding-bottom: 0.18rem;
+            padding: 0.18rem;
             white-space: nowrap;
         }
         
@@ -189,7 +189,7 @@
         <h2>业余项目</h2>
         <p>这些是我在业余时间做的一些小玩意，方便日常使用。</p>
         <table>
-            <tr>
+            <tr style="background-color: #eeeeee;">
                 <td>
                     中文博客
                 </td>
@@ -205,12 +205,20 @@
                     <a href="https://itFisher.com/blog" target="_blank">itFisher.com - IT Fisher</a>
                 </td>
             </tr>
-            <tr>
+            <tr style="background-color: #eeeeee;">
                 <td>
                     MarkDown编辑器 
                 </td>
                 <td style="width: 100%;">
                     <a href="https://ityufu.com/md" target="_blank">公众号编辑器</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Gemini Chat
+                </td>
+                <td style="width: 100%;">
+                    <a href="https://chat.peatool.com/" target="_blank">chat.peatool.com</a>
                 </td>
             </tr>
         </table>
@@ -254,7 +262,10 @@
     </script>
 </body>
 <footer>
-    <hr style="height:1px;border:none;border-top:1px dashed rgba(0, 152, 116, 1);" />
+    
+    <hr style="height:1px;border:none;border-top:1px dashed rgba(0, 152, 116, 0.3);" />
     <p style="margin-top: 0.5rem;">Copyright © 2019 DamonHu. All rights reserved.</p>
+    <div id="flyfish" class="fly-fish" height="400"></div>
+    <script src="./js/fish.js"></script>
 </footer>
 </html>
