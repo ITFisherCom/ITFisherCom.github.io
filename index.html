@@ -47,6 +47,30 @@
             padding-top: 0.5rem;
         }
 
+        .img-avatar {
+            width: 130px;
+            height: 130px;
+            border: 0 solid
+        }
+
+        .img-avatar:hover {
+            border-width: 5px;
+            animation: rotation .5s;
+            border-width: 5px;
+            border-color: rgba(0, 152, 116, 1);
+            animation-fill-mode: forwards;
+        }
+
+        @-webkit-keyframes rotation {
+            from {
+                -webkit-transform: rotate(0deg) scale(1.0);
+                
+            }
+            to {
+                -webkit-transform: rotate(360deg) scale(1.5);
+            }
+        }
+
         h1,
         h2 {
             color: #1a1a1a;
@@ -234,7 +258,7 @@
 <body>
     <header>
         <a href="https://hdd.im" target="_blank">
-            <img src="./static/avatar.png" alt="DamonHu" style="width: 130px; height: 130px;" />
+            <img src="./static/avatar.png" alt="DamonHu" class="img-avatar" />
         </a>
         <h1>DamonHu</h1>
         <p>Software Developer</p>
