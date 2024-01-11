@@ -43,8 +43,26 @@
         }
 
         header {
+            position: relative;
             text-align: center;
             padding-top: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .language-translate{
+            position: absolute;
+            margin-left: 3.6rem;
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+        .language-translate-image{
+            width: 0.25rem;
+            height: 0.25rem;
+            border-radius: 0;
+            animation: none;
+            margin-right: 0.06rem;
         }
 
         .img-avatar {
@@ -269,6 +287,12 @@
         <a href="https://hdd.im" target="_blank">
             <img src="https://cdn.ityufu.com/static/avatar.png" alt="DamonHu" class="img-avatar" />
         </a>
+        <div class="language-translate">
+            <a href="https://ityufu.com/" target="_self" style="display: flex; align-items: center;">
+                <img class="language-translate-image" src="https://cdn.ityufu.com/static/icon-language.png"/>
+                <p>简体中文</p>
+            </a>
+        </div>
         <h1>DamonHu</h1>
         <p>Software Developer</p>
         <p>Resilient, Calm, Humble, Patient</p>
@@ -295,8 +319,19 @@
 
     </header>
 
-    <section id="about">
-        <a href="https://ityufu.com/" target="_self" style="text-decoration: none;"><h2>👉🏻 点击查看中文介绍</h2></a>
+    <section id="blog">
+        <h2>My Blog</h2>
+        <div class="blog-list" style="margin-top: 0rem;">
+            <a href="https://itfisher.com/blog" target="_blank">
+                <div class="blog-list-item">
+                    <div class="blog-list-item-title">
+                        <img src="https://cdn.ityufu.com/static/icon-en.png" alt="IT Fisher" style="margin-right: 0.05rem;">
+                        <p style="font-size: 0.18rem; font-weight: bold; ">itFisher.com</p>
+                    </div>
+                    <p style="margin-top: 0.1rem; font-weight: bold;">Start Reading >></p>
+                </div>
+            </a>
+        </div>
     </section>
 
     <section id="about">
@@ -307,20 +342,7 @@
         <p style="font-size: 0.18rem; font-weight: bold; text-align: left;">🧐 Now I am very interested in AI and are actively learning AI tools.</p>
     </section>
 
-    <section id="blog">
-        <h2>My Blog</h2>
-        <div class="blog-list">
-            <a href="https://itfisher.com/blog" target="_blank">
-                <div class="blog-list-item">
-                    <div class="blog-list-item-title">
-                        <img src="https://cdn.ityufu.com/static/icon-en.png" alt="IT Fisher" style="margin-right: 0.05rem;">
-                        <p style="font-size: 0.18rem; font-weight: bold; ">itFisher.com</p>
-                    </div>
-                    <p style="margin-top: 0.1rem;">Start Reading >></p>
-                </div>
-            </a>
-        </div>
-    </section>
+    
 
     <section id="demo">
         <h2>Amateur Project</h2>
@@ -393,6 +415,7 @@
             <li>Shanghai Qinlian Internet of Things Co., Ltd. - Technical Development Director - June 2020- present</li>
             <li>Shanghai Qinlian Internet of Things Co., Ltd. - Front end Development Manager - July 2017- June 2020</li>
             <li>Shanghai Jidong Network Technology Co., Ltd. - Game Development Engineer - January 2015 to June 2017</li>
+            <li>Beijing Ourpalm Co., Ltd - Game Development Engineer - September 2013 to January 2015</li>
         </ul>
     </section>
 
